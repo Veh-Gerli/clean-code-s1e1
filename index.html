@@ -5,19 +5,22 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <img src="./eisenhower-matrix.jpg">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
-    </div>
-    <div class="main">
-      <p id="add-task">
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Todo list</h1>
+      <section id="add-task">
+        <h2 class="visually-hidden">Add Item</h2>
         <label for="new-task">Add Item</label>
         <div class="add-task-input">
           <input id="new-task"class="task" type="text">
           <button>Add</button>
         </div>
+<<<<<<< HEAD
       </p>
       <h3>Todo</h3>
       <ul id="incomplete-tasks">
@@ -53,6 +56,46 @@
         </li>
       </ul>
     </div>
+=======
+      </section>
+      <section>
+        <h2>Todo</h2>
+        <ul id="incomplete-tasks">
+          <li>
+            <input type="checkbox">
+            <label class="task">Pay Bills</label>
+            <input type="text" class="task">
+            <button class="edit">Edit</button>
+            <button class="delete">
+              <img src="./remove.svg">
+            </button>
+          </li>
+          <li class="edit-mode">
+            <input type="checkbox">
+            <label class="task">Go Shopping</label>
+            <input type="text" value="go shopping" class="task">
+            <button class="edit">Save</button>
+            <button class="delete">
+              <img src="./remove.svg">
+            </button></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Completed</h2>
+        <ul id="completed-tasks">
+          <li>
+            <input type="checkbox" checked>
+            <label class="task">See the Doctor</label>
+            <input type="text" class="task">
+            <button class="edit">Edit</button>
+            <button class="delete">
+              <img src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+>>>>>>> be11806 (refactor(extended-1.1): use semantic tags)
     <script src="app.js"></script>
   </body>
 </html>
